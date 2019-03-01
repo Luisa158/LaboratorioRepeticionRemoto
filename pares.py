@@ -1,12 +1,9 @@
 
-print("Bienvenido a este programa")
+x = int(input("Ingrese un numero: "))
 
-x=int(input("Ingrese un valor"))
+while (x % 2 == 0):
+    x = int(input("Ingrese un numero: "))
 
-if x%2==0:
-    print("Es par")
+    if(x % 2 != 0):
 
-else:
-    print("Es impar")
-
-print("Fin programa")
+        break
