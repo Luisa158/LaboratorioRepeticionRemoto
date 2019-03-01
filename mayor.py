@@ -1,11 +1,21 @@
 
-print("Programa de nuemro mayor")
+positivos=0
+negativos=0
+ceros=0
 
-x=int(input("Introduzca un valor entero"))
+i=0
+for i in range(0,11):
+    a=int(input("Introduzca un valor: "))
+    if a==0:
+        print (a)
+        ceros=ceros+1
+    elif a>0:
+        print(a)
+        positivos=positivos+1
+    else:
+        print(a)
+        negativos=negativos+1
 
-if x>0:
-    print("Valor mayor")
-else:
-    print("Valor negativo, menor a cero")
-
-print("Fin prgrama")
+print("los positivos son: ", positivos)
+print("los negativos son: ", negativos)
+print("los ceros son: ", ceros)
